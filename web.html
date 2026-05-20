@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Jersey Bola Store</title>
+  <link rel="stylesheet" href="web.css">
+   <link rel="stylesheet" href="index.css">
+  <ul class="ul">
+    <li><a href="index.html">KEMBALI</a></li>
+  </ul>
+  <link rel="stylesheet" href="web.css">
+</head>
+   
+  
+</head>
+<body>
+
+<header class="navbar">
+  <h1>Jersey Bola Store 🛒:</h1>
+  <a href="web2.html" class="cart-link">
+    🛒 Keranjang (<span id="cartCount">0</span>)
+  </a>
+</header>
+
+<section class="produk">
+  
+<div id="productModal" class="modal">
+  <div id="productContainer" class="product-grid"></div>
+  <div class="modal-content">
+    <span class="close" onclick="closeModal()">×</span>
+    <h2 id="modalName"></h2>
+
+    <p>Harga: <span id="modalPrice"></span></p>
+    <p>Diskon: <span id="modalDiscount"></span></p>
+    <p><strong>Harga Setelah Diskon:</strong> <span id="modalFinalPrice"></span></p>
+
+    <label>Pilih Ukuran:</label>
+    <select id="modalSize">
+      <option value="S">S</option>
+      <option value="M">M</option>
+      <option value="L">L</option>
+      <option value="XL">XL</option>
+    </select>
+
+    <button id="modalAddBtn">Tambah ke Keranjang</button>
+  </div>
+</div>
+
+
+<div class="card" onclick="openModal(
+  'Barcelona Home 2024',
+  250000,
+  10,
+  'img/b.jpg',
+  'Polyester Premium',
+  'Jersey original Barcelona musim 2024, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="b.jpg">
+
+  <h3>Barcelona Home 2024</h3>
+
+
+  <p class="description">
+    Jersey home Barcelona 2024, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+  <div class="card" onclick="openModal(
+  'Barcelona Away 2024',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Barcelona musim 2024, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="jut.jpg">
+
+  <h3>Barcelona Away 2024</h3>
+
+
+  <p class="description">
+    Jersey Away Barcelona 2024, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+  </div>
+
+
+  <div class="card" onclick="openModal(
+  'Real Mdrid 2024',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Real Madrid Home musim 2024, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="rm.jpg">
+
+  <h3>Real Madrid Home 2024</h3>
+
+
+  <p class="description">
+    Jersey Real Madrid Home 2024, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+<div class="card" onclick="openModal(
+  'Real madrid Home 2024',
+  1600000,
+  90,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Real madrid 2024, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="r.jpg">
+
+  <h3>Real Madrid Away 2024</h3>
+
+
+  <p class="description">
+    Jersey Real Madrid Away 2024, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+<div class="card" onclick="openModal(
+  'Manchester City away',
+  2500000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Manchester City Home, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="ct.jpg">
+
+  <h3>Mancehester City Home 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey Manchester City Home, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+<div class="card" onclick="openModal(
+  'Manchester City Home ',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Manchester City, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="c.jpg">
+
+  <h3>Manchester City Away 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey Away Manchester City, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+<div class="card" onclick="openModal(
+  'Liverpool Home',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Liverpool Home, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="l.jpg">
+
+  <h3>Liverpool Home 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey home Liverpool, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+
+<div class="card" onclick="openModal(
+  'Liverpool Away',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey original Liverpool 2025/2026, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="lv.jpg">
+
+  <h3>Liverpool Home 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey home Liverpool, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+
+
+<div class="card" onclick="openModal(
+  'Bayern Munchen',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey Bayern Munchen, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="by.jpg">
+
+  <h3>Bayern Munchen Home 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey Bayern Munchen Home, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+ <div class="card" onclick="openModal(
+  'Bayern Munchen Away',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey Bayern Munchen Away, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="byr.jpg">
+
+  <h3>Bayern Munchen Away 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey Bayern Munchen, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+ <div class="card" onclick="openModal(
+  'Psg Home 2025/2026',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey Psg Home, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="p.jpg">
+
+  <h3>PSG Home 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey home Psg, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+
+  <div class="card" onclick="openModal(
+  'PSG Away 2025/2026',
+  250000,
+  10,
+  'img/barca.jpg',
+  'Polyester Premium',
+  'Jersey Psg Away, nyaman dipakai olahraga maupun casual.'
+)">
+  <img src="ps.jpg">
+
+  <h3>PSG Away 2025/2026</h3>
+
+
+  <p class="description">
+    Jersey psg Away, bahan adem dan ringan.
+  </p>
+
+  
+  <p class="material">
+    Bahan: <strong>Polyester Premium</strong>
+  </p>
+
+  <p class="price">Rp 250.000</p>
+
+  <button>Beli</button>
+</div>
+</section>
+
+
+<footer>
+  © 2026 Jersey Bola Store
+</footer>
+
+<script src="web.js"></script>
+</body>
+</html>

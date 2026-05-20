@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <title>Checkout</title>
+  <title>About</title>
+  <link rel="stylesheet" href="index.css">
+</head>
+<body>
+   <ul class="ul">
+    <li><a href="index.html">KEMBALI</a></li>
+  </ul>
+  <link rel="stylesheet" href="web.css">
+</head>
+<body>
+
+<header class="navbar">
+  <h1>Checkout</h1>
+  <a href="jersey.html">⬅ Kembali</a>
+</header>
+
+<section class="checkout">
+  <h2>Daftar Pesanan</h2>
+  <ul id="checkoutList"></ul>
+<h3>Total: <span id="total-price">Rp 0</span></h3>
+
+<hr>
+
+<h3>Metode Pembayaran</h3>
+<select id="payment-method">
+  <option value="">-- Pilih Metode --</option>
+  <option value="Transfer Bank">Transfer Bank</option>
+  <option value="E-Wallet">E-Wallet (Dana/Ovo/Gopay)</option>
+  <option value="COD">COD (Bayar di Tempat)</option>
+</select>
+
+<br><br>
+
+<button onclick="processPayment()">Bayar Sekarang</button>
+
+<ul id="checkout-list"></ul>
+
+  <button class="checkout-btn" onclick="checkout()">
+    Konfirmasi Pesanan
+  </button>
+</section>
+
+<script src="web.js"></script>
+</body>
+</html>

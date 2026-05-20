@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <title>Home | Jersey Bola Store</title>
+    <link rel="stylesheet" href="jut.css">
+</head>
+<body>
+
+ 
+    <nav class="navbar">
+        <h1>Jersey Bola Store</h1>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Produk</a></li>
+            <li><a href="#">Keranjang</a></li>
+        </ul>
+    </nav>
+
+    
+    <section class="hero">
+        <h2>Rekomendasi Jersey Sepak Bola Terbaik</h2>
+        <p>Koleksi jersey original dan berkualitas tinggi</p>
+    </section>
+
+  
+    <section class="rekomendasi">
+        <h2>Rekomendasi Jersey</h2>
+        <div class="produk-container" id="produkList">
+           
+        </div>
+    </section>
+  
+ <div class="modal" id="modalDetail">
+    <div class="modal-content">
+        <span class="close" onclick="tutupModal()">&times;</span>
+        <img id="modalGambar" alt="Jersey">
+        <h3 id="modalNama"></h3>
+        <p id="modalHarga"></p>
+        <button>Beli Sekarang</button>
+    </div>
+</div>
+
+    <footer>
+        <p>© 2026 Jersey Bola Store</p>
+    </footer>
+
+    <script src="jut.js"></script>
+</body>
+</html>

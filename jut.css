@@ -1,0 +1,159 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    background-position: center;
+}
+
+body {
+    background-color: red;
+}
+
+
+.navbar {
+    background-color: black;
+    color: white;
+    padding: 35px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar ul {
+    list-style: none;
+    display: flex;
+    gap: 0px;
+}
+
+.navbar a {
+    color: white;
+    text-decoration: none;
+}
+
+
+.hero {
+    color: white;
+    padding: 100px;
+    text-align: center;
+    background-image: url(m.jpg);
+    background-position: center;
+    color: white;
+    font-size: 20px;
+  
+}
+
+
+.rekomendasi {
+    padding: 50px;
+}
+
+.rekomendasi h2 {
+    margin-bottom: 50px;
+}
+
+.produk-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+}
+
+.produk-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.12);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+
+    display: flex;
+    flex-direction: column;
+}
+
+
+.produk-card h3 {
+    margin: 10px 0;
+    min-height: 40px;   
+}
+
+
+.produk-card p {
+    font-weight: bold;
+    color: #0a1a2f;
+    margin-bottom: 10px;
+}
+
+.produk-card img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+.produk-card h3 {
+    margin: 10px 0;
+}
+
+.produk-card button {
+    background-color: #0a1a2f;
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.produk-card button:hover {
+    background-color: #123456;
+}
+.produk-card {
+    background-color: white;
+    padding: 15px;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+
+  
+    box-shadow: 0 15px 15px rgba(0, 0, 0, 0.12);
+    transition: transform 0.5s ease, box-shadow 0.5s ease;
+}
+
+
+.produk-card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 10px 18px rgba(0, 0, 0, 0.25);
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 999;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+}
+
+.modal-content {
+    background-color: white;
+    margin: 10% auto;
+    padding: 20px;
+    width: 300px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.modal-content img {
+    width: 100%;
+    border-radius: 8px;
+    margin-bottom: 10px;
+}
+
+.close {
+    float: right;
+    font-size: 22px;
+    cursor: pointer;
+}
